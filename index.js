@@ -1,3 +1,5 @@
+const prettierRules = require('./prettier');
+
 module.exports = {
   extends: [],
   env: {
@@ -14,7 +16,9 @@ module.exports = {
       jsx: true,
     },
   },
-  rules: {},
+  rules: {
+    "prettier/prettier": prettierRules.rules
+  },
   settings: {
     react: {
       version: 'detect',
