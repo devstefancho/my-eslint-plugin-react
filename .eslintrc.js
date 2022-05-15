@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['plugin:prettier/recommended'],
+  extends: ['plugin:prettier/recommended'], // eslint-plugin-prettier 을 여기에서 미리 설치해줌 (prettier config가 다른 formatting rule을 override 하게 해주는 것)
   env: {
     browser: true,
     commonjs: true,
@@ -21,7 +21,7 @@ module.exports = {
         "printWidth": 80,
         "singleQuote": true,
         "trailingComma": "es5",
-        "tabWidth": 8
+        "tabWidth": 8 // test를 위해서 8로 해둠
       }
     ]
   },
