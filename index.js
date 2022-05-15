@@ -1,5 +1,3 @@
-const prettierRules = require('./prettier');
-
 module.exports = {
   extends: [],
   env: {
@@ -17,7 +15,15 @@ module.exports = {
     },
   },
   rules: {
-    "prettier/prettier": prettierRules.rules
+    "prettier/prettier": [
+      'error',
+      {
+        "printWidth": 80,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "tabWidth": 4
+      }
+    ]
   },
   settings: {
     react: {
